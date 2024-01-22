@@ -101,7 +101,7 @@ export default function App() {
         Manten presionado el boton para grabar tu voz. Suelta el boton cuando termiens de grabar y
         escucharas una respuesta.
       </Text>
-      <Text style={styles.welcome}>Your message: "{state.results[0]}"</Text>
+      <Text style={styles.welcome}>Tu mensaje: "{state.results[0]}"</Text>
       <Pressable
         onPressIn={() => {
           setBorderColor("lightgreen");
@@ -125,7 +125,6 @@ export default function App() {
         <Text style={styles.welcome}>
           {state.isRecording ? "Soltar para enviar" : "Mantener para hablar"}
         </Text>
-        <Image style={styles.button} source={require("./assets/button.png")} />
       </Pressable>
       <Button
         title="Repetir ultimo mensaje"
